@@ -1,0 +1,15 @@
+[project]
+name = "dsx2text"
+version = "1.0.0"
+requires-python = "==3.12.4"
+dependencies = [
+    "libdsx",
+]
+
+[tool.uv.sources]
+libdsx = { git = "https://github.com/ravendevteam/libdsx.git" }
+
+[dependency-groups]
+dev = [
+    "nuitka>=4.2.2",
+]

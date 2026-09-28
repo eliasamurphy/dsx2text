@@ -1,0 +1,1 @@
+uv run -m nuitka dsx2text.py --mode=standalone --include-package=libdsx

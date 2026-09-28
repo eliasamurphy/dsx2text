@@ -1,0 +1,4 @@
+DossierRev2.dsx
+.venv/
+dsx2text.build/
+dsx2text.dist/

@@ -1,0 +1,33 @@
+version = 1
+revision = 3
+requires-python = "==3.12.4"
+
+[[package]]
+name = "dsx2text"
+version = "1.0.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "libdsx" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "nuitka" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "libdsx", git = "https://github.com/ravendevteam/libdsx.git" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "nuitka", specifier = ">=4.2.2" }]
+
+[[package]]
+name = "libdsx"
+version = "2026.9.23.1"
+source = { git = "https://github.com/ravendevteam/libdsx.git#9eadb7555017c66dcc3585e0e90f368b091bc1fe" }
+
+[[package]]
+name = "nuitka"
+version = "4.2.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/75/27/9fef9381e967c333c808d8b087ca2cca713d608647a638d962f34ea22a45/nuitka-4.2.2.tar.gz", hash = "sha256:29c1bfb6f53154e620b38cf6167cbb03f54043f6e08ef7d3f2d5080a95df7e0d", size = 4635975, upload-time = "2026-09-22T14:25:53.659Z" }
